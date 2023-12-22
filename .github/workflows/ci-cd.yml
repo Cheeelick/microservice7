@@ -20,7 +20,7 @@ jobs:
           - name: Run tests
             run: |
               pytest component_test.py
-              pytest integration_test.py
+              pytest unit_test.py
 
     build-and-push:
         needs: [test]
